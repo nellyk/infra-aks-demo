@@ -16,7 +16,7 @@ spec:
         "kubernetes.io/os": linux
       containers:
       - name: product-service
-        image: ghcr.io/azure-samples/aks-store-demo/product-service:#{Build.BuildId}#
+        image: docker.io/nkiboi/product-service:#{Build.BuildId}#
         ports:
         - containerPort: 3002
         env: 

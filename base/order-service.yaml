@@ -16,7 +16,7 @@ spec:
         "kubernetes.io/os": linux
       containers:
       - name: order-service
-        image: docker.io/nkiboi/aks-store-demo:#{Build.BuildId}#
+        image: docker.io/nkiboi/order-service:#{Build.BuildId}#
         ports:
         - containerPort: 3000
         env:
