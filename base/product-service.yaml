@@ -16,7 +16,7 @@ spec:
         "kubernetes.io/os": linux
       containers:
       - name: product-service
-        image: docker.io/nkiboi/product-service:467
+        image: docker.io/nkiboi/product-service:468
         ports:
         - containerPort: 3002
         env: 
