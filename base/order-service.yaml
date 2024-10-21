@@ -16,7 +16,7 @@ spec:
         "kubernetes.io/os": linux
       containers:
       - name: order-service
-        image: /:
+        image: docker.io/nkiboi/order-service:464
         ports:
         - containerPort: 3000
         env:
@@ -62,7 +62,7 @@ spec:
           periodSeconds: 3
       initContainers:
       - name: wait-for-rabbitmq
-        image: /:
+        image: docker.io/nkiboi/order-service:464
         command: ['sh', '-c', 'until nc -zv rabbitmq 5672; do echo waiting for rabbitmq; sleep 2; done;']
         resources:
           requests:
