@@ -62,7 +62,7 @@ spec:
           periodSeconds: 3
       initContainers:
       - name: wait-for-rabbitmq
-        image: docker.io/nkiboi/order-service:464
+        image: busybox
         command: ['sh', '-c', 'until nc -zv rabbitmq 5672; do echo waiting for rabbitmq; sleep 2; done;']
         resources:
           requests:
